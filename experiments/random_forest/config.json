@@ -1,0 +1,17 @@
+{
+  "class_weight": null,
+  "estimator": "sklearn.ensemble.RandomForestClassifier",
+  "features": [
+    "study_hours",
+    "attendance",
+    "previous_marks"
+  ],
+  "fit_split": "artifacts\\processed\\train.csv",
+  "max_depth": null,
+  "min_samples_leaf": 1,
+  "min_samples_split": 2,
+  "n_estimators": 300,
+  "n_jobs": -1,
+  "random_state": 42,
+  "threshold_selection_split": "artifacts\\processed\\validation.csv"
+}

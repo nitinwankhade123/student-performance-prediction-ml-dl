@@ -1,0 +1,15 @@
+{
+  "C": 1.0,
+  "class_weight": null,
+  "estimator": "sklearn.linear_model.LogisticRegression",
+  "features": [
+    "study_hours",
+    "attendance",
+    "previous_marks"
+  ],
+  "fit_split": "artifacts\\processed\\train.csv",
+  "max_iter": 2000,
+  "random_state": 42,
+  "solver": "lbfgs",
+  "threshold_selection_split": "artifacts\\processed\\validation.csv"
+}

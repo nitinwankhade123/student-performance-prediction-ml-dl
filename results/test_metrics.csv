@@ -1,0 +1,12 @@
+metric,value
+test_records,150.0
+threshold,0.5
+accuracy,0.7333333333333333
+precision,0.7333333333333333
+recall,1.0
+f1_score,0.8461538461538461
+roc_auc,0.6997727272727273
+true_negative,0.0
+false_positive,40.0
+false_negative,0.0
+true_positive,110.0

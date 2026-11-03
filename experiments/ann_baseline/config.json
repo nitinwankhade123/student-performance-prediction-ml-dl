@@ -1,0 +1,24 @@
+{
+  "architecture": "Linear(3,8) -> ReLU -> Linear(8,1 raw logit)",
+  "batching": "full batch",
+  "class_weight": null,
+  "configured_max_epochs": 100,
+  "early_stopping_patience": 10,
+  "early_stopping_triggered": false,
+  "epochs_completed": 100,
+  "estimator": "StudentPerformanceANN existing checkpoint",
+  "features": [
+    "study_hours",
+    "attendance",
+    "previous_marks"
+  ],
+  "learning_rate": 0.001,
+  "loss": "BCEWithLogitsLoss",
+  "optimizer": "Adam",
+  "random_seed": 42,
+  "threshold_selection_criterion": "maximum validation balanced accuracy; ties by fail precision then distance from 0.5",
+  "threshold_selection_split": "artifacts\\processed\\validation.csv",
+  "training_history_source": "results/training_history.csv (100 epochs)",
+  "weights_sha256": "5ef4fcb0d60f40642d47a0f7250a87165ce7cb3fb724612023f2372d0f220108",
+  "weights_source": "artifacts\\best_model.pth"
+}

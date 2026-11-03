@@ -1,0 +1,29 @@
+# Python bytecode and interpreter/test caches
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Temporary/editor/OS files
+*.tmp
+*.temp
+*.swp
+*~
+~*
+*.bak
+*.orig
+*.rej
+~$*
+*.log
+Thumbs.db
+Desktop.ini

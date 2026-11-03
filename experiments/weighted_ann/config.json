@@ -1,0 +1,21 @@
+{
+  "architecture": "Linear(3,8) -> ReLU -> Linear(8,1 raw logit)",
+  "batching": "full batch",
+  "class_weight_formula": "training_pass_count / training_fail_count",
+  "epochs": 100,
+  "estimator": "StudentPerformanceANN (same architecture as baseline)",
+  "fail_class_weight": 2.7433155080213902,
+  "features": [
+    "study_hours",
+    "attendance",
+    "previous_marks"
+  ],
+  "fit_split": "artifacts\\processed\\train.csv",
+  "learning_rate": 0.001,
+  "loss": "per-sample BCEWithLogitsLoss weighted by class",
+  "optimizer": "Adam",
+  "pass_class_weight": 1.0,
+  "random_seed": 42,
+  "threshold_selection_split": "artifacts\\processed\\validation.csv",
+  "weights_path": "experiments\\weighted_ann\\model_weights.pth"
+}
